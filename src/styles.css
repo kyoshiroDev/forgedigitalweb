@@ -1,0 +1,32 @@
+* ::after :before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font Montserrat Alternates*/
+@font-face {
+  font-family:'Montserrat Alternates';
+  src: local('Montserrat_Alternates'),
+  url('./assets/Fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf'),
+  url('./assets/Fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf');
+
+/* Font Lato */
+}@font-face {
+  font-family:'Lato';
+  src: local('Lato'),
+  url('./assets/Fonts/Lato/Lato-Bold.ttf'),
+  url('./assets/Fonts/Lato/Lato-Regular.ttf');
+}
+
+body{
+  background: #1d1d1d;
+  font-size: 62.5%;
+  height: 100svh;
+  margin: 0;
+}
+
+body, html {
+  scroll-behavior: smooth;
+  scroll-snap-align: center;
+}

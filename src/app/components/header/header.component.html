@@ -1,0 +1,19 @@
+<header>
+  <div class="container">
+    <h1>WebPresso</h1>
+    <nav [class.active]="active" (click)="closeNavbar()">
+      <a href="#">ACCUEIL</a>
+      <a href="#mes-competences">COMPETENCES</a>
+      <a href="#mes-projets">PROJETS</a>
+<!--      <a href="#contact">CONTACT</a>-->
+    </nav>
+    <div class="burger-container" (click)="toggleNavbar()">
+      @if (!active) {
+        <fa-icon [icon]="faBars" class="burger-icon"></fa-icon>
+      } @else {
+        <fa-icon [icon]="faXmark" class="cross-icon"></fa-icon>
+      }
+    </div>
+  </div>
+</header>
+

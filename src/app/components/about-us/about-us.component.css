@@ -1,0 +1,141 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 20px 20px 80px 20px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  color: #1d1d1d;
+}
+
+img {
+  max-width: 250px;
+}
+
+.img-text-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.img-text-container h2 {
+  font-size: 3em;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 1.9em;
+  text-align: left;
+
+}
+
+.container-myinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1.6em;
+  margin-top:20px;
+  padding: 0;
+  border-top: solid 1px #1d1d1d;
+}
+
+ul {
+  display: table;
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  line-height: 40px;
+  padding-top: 20px;
+}
+
+strong {
+  padding-right: 40px;
+}
+
+.button-cv {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.9em;
+  margin-bottom: 20px;
+  height: 50px;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  width: 250px;
+  height: 50px;
+  background: #264de4;
+  border-radius: 5px;
+}
+
+a:hover{
+  background: #2965f1;
+}
+
+@media screen and (min-width: 950px) {
+  .about-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .about-container img{
+    min-width: 500px;
+    margin-right: 40px;
+  }
+
+  .img-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 600px;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  .img-text-container h2 {
+    font-size: 3em;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .img-text-container p {
+    margin-bottom: 30px;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  li {
+    line-height: 40px;
+    padding-top: 20px;
+  }
+
+  .button-cv {
+    margin-top: 20px;
+  }
+}

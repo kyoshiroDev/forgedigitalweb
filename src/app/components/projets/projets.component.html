@@ -1,0 +1,32 @@
+<section class="container-projets">
+  <h3>Mes Projets</h3>
+  <div class="projets">
+    @for (project of projects; track project.id) {
+      <div class="projets-children">
+
+        <img [src]="project.image" class="card-img-top" alt="{{ project.alt }}">
+        <div class="card-body">
+          <h4 class="card-title">{{ project.titre }}</h4>
+          <p class="card-text">{{ project.description }}</p>
+          <h4>Langages utilisés</h4>
+          <div class="list-techno">
+            <p-chip class="list-techno-item" label="{{ project.languages[0] }}"></p-chip>
+            <p-chip class="list-techno-item" label="{{ project.languages[1] }}"></p-chip>
+            <p-chip class="list-techno-item" label="{{ project.languages[2] }}"></p-chip>
+            <p-chip class="list-techno-item" label="{{ project.languages[3] }}"></p-chip>
+            <p-chip class="list-techno-item" label="{{ project.languages[4] }}"></p-chip>
+            <p-chip class="list-techno-item" label="{{ project.languages[5] }}"></p-chip>
+          </div>
+          <div class="card-button">
+            <a href="{{ project.buttonSite }}" class="card-link" target="_blank">Voir le site</a>
+            <a href="{{ project.buttonGithub }}" class="card-link" target="_blank">Voir le github</a>
+          </div>
+
+        </div>
+      </div>
+    } @empty {
+      <p>Des projets arrivent bientôt...</p>
+    }
+  </div>
+</section>
+<div id="contact"></div>

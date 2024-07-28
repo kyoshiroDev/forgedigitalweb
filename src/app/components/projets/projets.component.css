@@ -1,0 +1,98 @@
+.container-projets {
+  background: #ffffff;
+  padding-top: 50px;
+}
+
+h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  color: #1d1d1d;
+  font-family: "Montserrat Alternates", serif;
+}
+
+.projets {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1300px;
+  margin: auto;
+  gap: 50px;
+  padding: 0 10px 50px 10px;
+}
+
+.projets-children {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: solid 1px #1d1d1d;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.50) 2px 2px 3px;
+  margin: auto;
+  height: 600px;
+}
+
+.card-img-top {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+  max-height: 412px;
+  font-size: 1.9em;
+  padding: 0 10px;
+}
+
+h4 {
+  margin: 0;
+}
+
+.card-text {
+  height: 80px;
+  margin: 0;
+}
+
+.list-techno {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 0;
+  gap: 10px;
+  flex-wrap: wrap;
+  height: 122px;
+}
+
+.list-techno-item {
+  text-align: center;
+}
+
+.card-button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card-button a {
+  cursor: pointer;
+  text-decoration: none;
+  padding-bottom: 20px;
+  color: #264de4;
+  margin: auto;
+}
+
+.card-button a:hover {
+  color: #4886f4;
+}
+
+@media screen and (min-width: 550px) {
+  .projets {
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .projets {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

@@ -1,0 +1,113 @@
+/* Header */
+header{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 82px;
+  background: #1d1d1d;
+  top: 0;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  color: blue;
+  align-items: center;
+  border-bottom: 2px #2272ff solid ;
+  padding: 10px 10px 10px 10px;
+  margin: auto 20px;
+  width: 100%;
+}
+
+h1{
+  color: #fff;
+  font-size: 2.4em;
+  font-family:'Montserrat Alternates', sans-serif;
+}
+
+/* Navbar */
+nav{
+  background-color: #1d1d1d;
+  opacity: 90%;
+  position: absolute;
+  top: -1000px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  transition: all ease-in-out 0.5s;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.6em;
+  margin: 30px auto;
+  font-family: 'Lato', sans-serif;
+}
+
+nav a:hover{
+  color: #4886f4;
+  border-bottom: solid 2px #4886f4;
+}
+
+.selected-menu{
+  color: #2272ff;
+}
+
+.active{
+  top: 0;
+  height: 100vh;
+}
+
+/* Burger Button*/
+.burger-container{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 50px;
+  font-size: 2.5em;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (min-width: 950px) {
+  .container{
+    position: fixed;
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+    margin: auto;
+    background: #1d1d1d;
+  }
+
+  nav {
+    position: relative;
+    top: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+    width: 600px;
+    margin: auto;
+  }
+
+  nav a {
+    margin: 30px 0 30px 30px;
+  }
+
+  .contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 50px;
+  }
+  .burger-container{
+    display: none;
+  }
+}
