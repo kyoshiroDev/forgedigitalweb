@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {ChipModule} from "primeng/chip";
 
 @Component({
-  selector: 'app-projets',
+  selector: 'fdw-projets',
   standalone: true,
   imports: [ChipModule],
   templateUrl: './projets.component.html',
@@ -32,7 +32,7 @@ export class ProjetsComponent {
       buttonGithub: "https://github.com/kyoshiroDev/The-Crazy-Dice"
     },
     {
-      id: 1,
+      id: 3,
       image: "/assets/Images/garage-v-parrot.png",
       alt: "image du site pour le garage v parrot",
       titre: "GarageV Parrot",

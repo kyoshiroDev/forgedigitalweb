@@ -3,7 +3,7 @@ import {RouterOutlet} from "@angular/router";
 
 
 @Component({
-  selector: 'app-competences',
+  selector: 'fdw-competences',
   standalone: true,
   imports: [
     RouterOutlet

@@ -1,7 +1,82 @@
-h3{
+section {
+  padding: 80px 0;
+}
+
+h3 {
   width: 100%;
   text-align: center;
   font-size: 3em;
   color: #1d1d1d;
   font-family: "Montserrat Alternates", serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: max-content;
+  padding: 20px;
+  background-color: white;
+  margin: 10px auto;
+  border-radius: 20px;
+  border: 3px solid #2272ff;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  width: 90%;
+}
+
+label {
+  font-size: 1.5em;
+}
+
+input,
+textarea {
+  height: 40px;
+  margin: 5px 0 20px 0;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #00000031;
+  outline: none;
+}
+
+input.ng-valid,
+textarea.ng-valid{
+  border:3px solid rgb(93, 153, 3);
+}
+
+textarea {
+  height: 110px;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  background-color: #2272ff;
+  color: white;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4886f4;
+}
+
+button:disabled {
+  background-color: darkgray;
+  cursor: not-allowed;
 }

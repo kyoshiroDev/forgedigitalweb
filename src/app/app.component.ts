@@ -8,9 +8,8 @@ import {ProjetsComponent} from "./components/projets/projets.component";
 import {ContactComponent} from "./components/contact/contact.component";
 import {FooterComponent} from "./components/footer/footer.component";
 
-
 @Component({
-  selector: 'app-root',
+  selector: 'fdw-root',
   standalone: true,
   imports: [RouterOutlet,
     HeaderComponent,
@@ -24,5 +23,5 @@ import {FooterComponent} from "./components/footer/footer.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'mon-portfolio';
+  title = 'Forge Digital Web';
 }

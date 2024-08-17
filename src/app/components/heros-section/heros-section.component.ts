@@ -6,7 +6,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faLinkedin, faSquareGithub,} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
-  selector: 'app-heros-section',
+  selector: 'fdw-heros-section',
   standalone: true,
   imports: [
     FontAwesomeModule,
