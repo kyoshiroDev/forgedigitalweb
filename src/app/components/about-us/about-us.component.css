@@ -54,6 +54,7 @@ ul {
 }
 
 li {
+  width: 300px;
   line-height: 40px;
   padding-top: 20px;
 }
