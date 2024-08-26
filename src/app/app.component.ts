@@ -20,7 +20,7 @@ import {FooterComponent} from "./components/footer/footer.component";
     ContactComponent,
     FooterComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'Forge Digital Web';

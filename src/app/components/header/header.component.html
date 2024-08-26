@@ -5,15 +5,14 @@
       <a href="#">ACCUEIL</a>
       <a href="#mes-competences">COMPETENCES</a>
       <a href="#mes-projets">PROJETS</a>
-<!--      <a href="#contact">CONTACT</a>-->
+      <!--      <a href="#contact">CONTACT</a>-->
     </nav>
     <div class="burger-container" (click)="toggleNavbar()">
       @if (!active) {
-        <fa-icon [icon]="faBars" class="burger-icon"></fa-icon>
+      <i class="fa-solid fa-bars"></i>
       } @else {
-        <fa-icon [icon]="faXmark" class="cross-icon"></fa-icon>
+      <i class="fa-solid fa-x"></i>
       }
     </div>
   </div>
 </header>
-
