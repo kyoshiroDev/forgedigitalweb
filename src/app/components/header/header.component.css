@@ -42,10 +42,6 @@ nav {
   transition: all ease-in-out 0.5s;
 }
 
-i {
-  color: #ffffff;
-}
-
 nav a {
   color: #ffffff;
   text-decoration: none;
@@ -77,6 +73,10 @@ nav a:hover {
   font-size: 2.5em;
   z-index: 2;
   cursor: pointer;
+}
+
+i {
+  color: #4886f4;
 }
 
 /* Responsive */
