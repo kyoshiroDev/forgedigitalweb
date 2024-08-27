@@ -21,6 +21,8 @@ export class ContactComponent {
   };
 
   onSubmit() {
+    if(this.contactForm.valid){
     this.contactForm.submitted;
+    }
   }
 }
