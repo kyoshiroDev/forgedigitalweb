@@ -15,11 +15,11 @@ export class ContactComponent {
     firstName: '',
     email: '',
     message: '',
-    submitted: false,
   };
 
+  submitted = false
   onSubmit() {
-    this.contact.submitted = true
+    this.submitted = true
     console.log(this.contact)
   }
 }
