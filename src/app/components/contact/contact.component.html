@@ -2,6 +2,7 @@
   <form
     name="contact"
     method="post"
+    data-netlify = "true"
     #contactForm="ngForm"
     (ngSubmit)="onSubmit()"
   >
@@ -50,6 +51,6 @@
         required
       ></textarea>
     </div>
-    <button type="submit" [disabled]="!contactForm.valid">Envoyer</button>
+    <button type="submit" [disabled]="contactForm.invalid">Envoyer</button>
   </form>
 </section>
