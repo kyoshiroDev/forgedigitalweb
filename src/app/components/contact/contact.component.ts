@@ -15,9 +15,11 @@ export class ContactComponent {
     firstName: '',
     email: '',
     message: '',
+    submitted: false,
   };
 
-  onSubmit(form: NgForm) {
-    form.submitted
+  onSubmit() {
+    this.contact.submitted = true
+    console.log(this.contact)
   }
 }
