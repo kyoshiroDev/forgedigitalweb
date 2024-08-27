@@ -10,7 +10,6 @@ import { ContactModel } from '../../models/contact-model';
   styleUrl: './contact.component.css',
 })
 export class ContactComponent {
-
   contact: ContactModel = {
     lastName: '',
     firstName: '',
@@ -18,9 +17,7 @@ export class ContactComponent {
     message: '',
   };
 
-
-
-  onSubmit(form: NgForm): void {
+  onSubmit(form: NgForm) {
     form.submitted
   }
 }
