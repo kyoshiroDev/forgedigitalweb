@@ -21,7 +21,7 @@ export class ContactComponent {
   };
 
   submitted = false
-  onSubmit() {
+  onSubmit(): void {
     this.submitted = true;
   }
 }
