@@ -1,6 +1,8 @@
 <section class="container-contact">
   <form
-    (ngSubmit)="onSubmit()"
+    method="post"
+    #contactForm="ngForm"
+    (ngSubmit)="onSubmit(contactForm)"
     data-netlify = true
     name="contact"
   >

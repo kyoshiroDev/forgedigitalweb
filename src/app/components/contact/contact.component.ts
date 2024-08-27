@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormsModule, ngForm } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import { ContactModel } from '../../models/contact-model';
 
 @Component({
@@ -20,6 +20,7 @@ export class ContactComponent {
 
 
 
-  onSubmit(contactForm: ngForm): void {
+  onSubmit(form: NgForm): void {
+    form.submitted
   }
 }
