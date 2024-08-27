@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import {Component, ViewChild} from '@angular/core';
+import { FormsModule, NgForm } from '@angular/forms';
 import { ContactModel } from '../../models/contact-model';
 
 @Component({
@@ -10,6 +10,9 @@ import { ContactModel } from '../../models/contact-model';
   styleUrl: './contact.component.css',
 })
 export class ContactComponent {
+
+  @ViewChild('contactForm') contactForm!: NgForm;
+
   contact: ContactModel = {
     lastName: '',
     firstName: '',
@@ -17,9 +20,7 @@ export class ContactComponent {
     message: '',
   };
 
-  submitted = false
   onSubmit() {
-    this.submitted = true
-    console.log(this.contact)
+    this.contactForm.submitted;
   }
 }
