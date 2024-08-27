@@ -1,9 +1,9 @@
 <section class="container-contact">
   <form
     action=""
-    method="post"
+    method="POST"
     #contactForm="ngForm"
-    (ngSubmit)="onSubmit(contactForm)"
+    (ngSubmit)="onSubmit()"
     data-netlify="true"
     name="contact"
   >
@@ -53,6 +53,6 @@
         required
       ></textarea>
     </div>
-    <button type="submit" [disabled]="!contactForm.valid">Envoyer</button>
+    <button type="submit" [disabled]="!contactForm.form.valid">Envoyer</button>
   </form>
 </section>
