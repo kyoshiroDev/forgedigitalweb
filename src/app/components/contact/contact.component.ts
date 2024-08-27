@@ -21,7 +21,7 @@ export class ContactComponent {
   };
 
   submitted = false
-  onSubmit(contactForm): void {
-    contactForm.submit()
+  onSubmit(form): void {
+    form.submit
   }
 }
