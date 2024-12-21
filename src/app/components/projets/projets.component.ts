@@ -36,7 +36,7 @@ export class ProjetsComponent {
       image: "/assets/Images/garage-v-parrot.png",
       alt: "image du site pour le garage v parrot",
       titre: "GarageV Parrot",
-      description: "Création d'un mini jeux de dé pour un exercice d'entrainement",
+      description: "Création d'un site de garage projet d'entrainement",
       languages: ["html", "CSS", "JavaScript", "php", "symfony", "mariadb"],
       buttonSite: "https://ecf-garage-v-parrot-ad9426be4a47.herokuapp.com/",
       buttonGithub: "https://github.com/kyoshiroDev/garage-v-parrot"
