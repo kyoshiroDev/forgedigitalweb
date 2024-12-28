@@ -1,5 +1,4 @@
-
-h3{
+h3 {
   text-align: center;
   font-size: 3em;
   color: #ffffff;
@@ -7,61 +6,78 @@ h3{
   margin-top: 80px;
 }
 
-.container-front-back{
+.container-competences-img-front img {
+  max-width: 65px;
+}
+
+.container-competences-img-front :nth-child(6) {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  border-radius: 50%;
+  border-color: black;
+}
+
+.container-front-back {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   padding-bottom: 80px;
 }
 
-p{
+p {
   text-align: center;
   justify-items: center;
   color: #ffffff;
   font-size: 3em;
-  margin: 20px 0 0 0 ;
+  margin: 20px 0 0 0;
   width: 100%;
 }
-.container-competences-img-front{
+.container-competences-img-front {
   padding-bottom: 20px;
-  border-bottom: solid 2px #ffff;
+  /*border-bottom: solid 2px #ffff;*/
 }
 
-.container-competences-img-front, .container-competences-img-back{
+.container-competences-img-front,
+.container-competences-img-back {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.container-competences-img-front > img, .container-competences-img-back > img{
+.container-competences-img-front > img,
+.container-competences-img-back > img {
   margin: 20px;
 }
 
 @media screen and (min-width: 950px) {
-  .container-front-back{
+  .container-front-back {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr, 1fr;
     grid-template-rows: 1fr;
   }
 
- .container-competences-img-front p{
-   padding-top: 30px;
-   border-right: solid 2px #fff;
- }
+  .container-competences-img-front p {
+    padding-top: 30px;
+    border-right: solid 2px #fff;
+  }
 
-  .container-competences-img-front{
+  .container-competences-img-front {
     grid-column-start: 1;
     grid-row-start: 2;
-    border-right: solid 2px #ffffff;
+    /*border-right: solid 2px #ffffff;*/
     border-bottom: none;
   }
 
-  .container-competences-img-back{
+  .container-competences-img-back {
     grid-column-start: 2;
     grid-row-start: 2;
   }
 
-  .container-competences-img-front, .container-competences-img-back{
+  .container-competences-img-front,
+  .container-competences-img-back {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
